@@ -1,0 +1,49 @@
+{
+  "name": "ionicsvelte",
+  "private": true,
+  "version": "0.0.0",
+  "type": "module",
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build && vite build --ssr",
+    "build:client": "vite build",
+    "build:server": "vite build  --ssr",
+    "preview": "vite preview",
+    "check": "svelte-check --tsconfig ./tsconfig.json",
+    "routes": "routify"
+  },
+  "devDependencies": {
+    "@capacitor/cli": "^3.6.0",
+    "@rollup/plugin-alias": "^3.1.9",
+    "@roxi/routify": "^3.0.0-next.93",
+    "@sveltejs/vite-plugin-svelte": "^1.0.0-next.30",
+    "@tsconfig/svelte": "^2.0.1",
+    "sass": "^1.52.2",
+    "spank": "^2.0.0-5",
+    "svelte": "^3.44.0",
+    "svelte-check": "^2.2.7",
+    "svelte-preprocess": "^4.9.8",
+    "tslib": "^2.3.1",
+    "typescript": "^4.5.4",
+    "vite": "^2.9.9",
+    "vite-plugin-pwa": "^0.12.0"
+  },
+  "dependencies": {
+    "@capacitor/android": "^3.6.0",
+    "@capacitor/app": "^1.1.1",
+    "@capacitor/core": "^3.6.0",
+    "@capacitor/device": "^1.1.2",
+    "@capacitor/haptics": "^1.1.4",
+    "@capacitor/ios": "^3.6.0",
+    "@capacitor/keyboard": "^1.2.3",
+    "@capacitor/status-bar": "^1.0.8",
+    "@ionic-native/core": "^5.36.0",
+    "@ionic-native/in-app-browser": "^5.36.0",
+    "@ionic/core": "^6.1.8",
+    "localforage": "^1.10.0",
+    "swiper": "^8.2.4"
+  },
+  "routify": {
+    "pages": "./src/routes"
+  }
+}
