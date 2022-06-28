@@ -1,29 +1,41 @@
-# Ionic Svelte PWA starter - Tabs
-A starter app for all Ionic UI elements - up to Ionic 6!!! 
 
-Easy documentation for svelte & Ionic published as web app: https://ionicsvelte.firebaseapp.com
-e console.log*
+<h1 align="center"> Ionic Svelte Demo - CONFERENCE</h1> <br>
+<p align="center">
+  <a href="https://ionicsvelte.firebaseapp.com">
+    <img alt="IonicSvelte" title="IonicSvelte" src="https://github.com/Tommertom/svelte-ionic-app/raw/master/src/static/assets/ionicsvelte_logo.png" width="350">
+  </a>
+</p>
+<br>
+<p align="center">
+  A showcase app for Ionic. Supercharged by Svelte and Vite.
+</p>
+<br>
 
-Features
-- Use all Ionic 6 UI elements
-- Fast bundler using VITE
-- Ease PWA configuration with good documentation - using zero-config Vite (https://vite-plugin-pwa.netlify.app/)
-- Deployable as PWA.
-- File based router (using Roxy/Routify)
+NOTE - NOT WORKING YET - WORK IN PROGRESS
 
-* https://github.com/Tommertom/svelte-ionic-app/tree/6.Tabs - Ionic's  starter with Tabs 
+# Ionic Svelte Conference starter
+A starter app for all Ionic UI elements - based on Ionic's Conference Starter
 
-
-Install this branch:
+Install this starter:
 ```bash
-git clone --single-branch --branch 1.BlankStarter https://github.com/Tommertom/svelte-ionic-app.git
-cd svelte-ionic-app
+git clone https://github.com/Tommertom/svelte-ionic-blank-conference.git 
+cd svelte-ionic-blank-list
 npm i
 npm run dev
 ```
-  
 
-# PWA Interface - easing the PWA work in your app
+## All starters
+* Blank demo - https://github.com/Tommertom/svelte-ionic-blank-demo
+* Tabs demo - https://github.com/Tommertom/svelte-ionic-tabs-demo
+* Sidemenu demo - https://github.com/Tommertom/svelte-ionic-sidemenu-demo
+* Mystarter demo - taking photo with Capacitor - https://github.com/Tommertom/svelte-ionic-mystarter-demo
+* List demo - https://github.com/Tommertom/svelte-ionic-list-demo
+* Conference demo - https://github.com/Tommertom/svelte-ionic-conference-demo
+
+And the official demo app - https://github.com/Tommertom/svelte-ionic-app
+
+  
+## PWA Interface - easing the PWA work in your app
 To help you managing state of the service worker and the various events, a simple svelte store is provided for (`lib/pwa.ts`). This store wraps the various events of the service worker in a readable store and a number of derived stores so you can easily listen to various events.
 
 While most tutorials provide you the basics to do all these separately and in an "Hello world" fashion, having all in a store helps wiring things up to the UI across various places in the code. 
@@ -39,6 +51,4 @@ The following derived stores are implemented:
 All these props are also available via the `pwaStatusStream` readable store.
 
 # Issues - work in progress
-- Ion Icons implementation will not support md and ios specific icons etc (yet) - name prop does not function - also happening in Vue/React.Similar icon issues arise with other component that can digest custom icons (to check)
-- A IonFooter in a Modal gives weird layout - not happening in Angular, so a thing related to this implementation
-- Adding custom class to Modal/Popover does not work (using controller) - using inline is probably better
+Please refer to the README on the main repo - https://github.com/Tommertom/svelte-ionic-app
