@@ -41,7 +41,7 @@
     "@ionic-native/in-app-browser": "^5.36.0",
     "@ionic/core": "^6.1.8",
     "localforage": "^1.10.0",
-    "swiper": "^8.2.4"
+    "swiper": "^8.2.6"
   },
   "routify": {
     "pages": "./src/routes"
