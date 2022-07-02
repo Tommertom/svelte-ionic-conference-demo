@@ -40,6 +40,4 @@
   });
 </script>
 
-<main in:fly={{ x: 100, duration: 250 }}>
-  <slot />
-</main>
+<slot />

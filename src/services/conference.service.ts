@@ -12,7 +12,7 @@ export const allConferences = derived(store, ($store) => $store);
 
 let data = undefined;
 
-const load = async (): any => {
+const load = async (): Promise<any> => {
     if (data) {
         return data;
     } else {
@@ -153,6 +153,6 @@ const getMap = () => {
 }
 
 export const conferenceService = {
-    getMap,
+    getMap, load,
     getTimeline, getSpeakers, getTracks
 }

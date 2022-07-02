@@ -1,7 +1,10 @@
 <script lang="ts">
+  import About from "$components/About.svelte";
+
   import Map from "$components/Map.svelte";
 
   import Schedule from "$components/Schedule.svelte";
+  import SpeakerList from "$components/SpeakerList.svelte";
 
   import IonTab from "$lib/ionic/svelte/components/IonTabs.svelte";
   import { params } from "@roxi/routify";
@@ -15,9 +18,9 @@
       tab: "schedule",
       component: Schedule,
     },
-    { label: "Speakers", icon: "people", tab: "speakers", component: Schedule },
+    { label: "Speakers", icon: "people", tab: "speakers", component: SpeakerList },
     { label: "Map", icon: "location", tab: "map", component: Map },
-    { label: "About", icon: "informationCircle", tab: "about", component: Schedule },
+    { label: "About", icon: "informationCircle", tab: "about", component: About },
   ];
 
   console.log("Tabs", tab, myTabs);

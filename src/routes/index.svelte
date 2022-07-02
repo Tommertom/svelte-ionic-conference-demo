@@ -5,5 +5,3 @@
 
   $goto("/tutorial");
 </script>
-
-sdsd

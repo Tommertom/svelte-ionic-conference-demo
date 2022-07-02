@@ -11,9 +11,9 @@ const HAS_LOGGED_IN = 'hasLoggedIn';
 const HAS_SEEN_TUTORIAL = 'hasSeenTutorial';
 const favorites: string[] = [];
 
-const store = writable<User>(undefined);
+const store = writable<User>({ username: 'testuser' });
 
-const currentUser = derived(store, ($store) => $store);
+export const currentUser = derived(store, ($store) => $store);
 const isLoggedIn = derived(currentUser, ($currentuser) => $currentuser !== undefined)
 
 
@@ -52,7 +52,7 @@ const signup = (username: string): Promise<any> => {
     });
 }
 
-const logout = (username: string): Promise<any> => {
+const logout = (): Promise<any> => {
     return localforage.removeItem(HAS_LOGGED_IN).then(() => {
         store.set(undefined)
     });
@@ -60,7 +60,7 @@ const logout = (username: string): Promise<any> => {
 
 export const userService = {
     didSeeTutorial, setSeenTutorial,
-    currentUser,
+    // currentUser,
     hasFavorite, addFavorite, removeFavorite,
     login, signup, logout, isLoggedIn
 }

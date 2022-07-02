@@ -11,7 +11,16 @@
 </p>
 <br>
 
-NOTE - NOT WORKING YET - WORK IN PROGRESS
+N.B. some things not implemented/migrated from Ionic's starter:
+- Form validation - you need to choose your own way/library to do so
+- Google maps - fill in your own API key!
+- Menu not working
+- some other stuff
+
+Honestly, I am not too sure if this starter (also looking at the Angular version) - really is a great starter to look at. To me there are too many things going on which do not make up a great app - like the state management (as an example). So this starter will remain very buggy - I just don't see the point spending much time making it better without making very opinionated choices. These you might be better off making your own choices here.
+
+Feel free to PR though - even if it is something small and to beef up your github profile :)
+
 
 # Ionic Svelte Conference starter
 A starter app for all Ionic UI elements - based on Ionic's Conference Starter
@@ -23,6 +32,8 @@ cd svelte-ionic-blank-list
 npm i
 npm run dev
 ```
+
+Please note - there is no form validation implemented. There is a truckload of options here, so I don't want to prescribe one upfront.
 
 ## All starters
 * Blank demo - https://github.com/Tommertom/svelte-ionic-blank-demo
