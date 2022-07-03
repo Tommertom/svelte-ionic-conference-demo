@@ -22,7 +22,7 @@ const emptyStatus: PWAStatus = {
 export const pwaStatusStream = readable(emptyStatus, (set) => {
     let status: PWAStatus = emptyStatus;
 
-    if (typeof navigator !== undefined) {
+    if (typeof navigator !== "undefined") {
         const updateSWObject = registerSW({
             onNeedRefresh() {
                 //    console.log('PWA App needs refresh');
@@ -47,15 +47,17 @@ export const pwaStatusStream = readable(emptyStatus, (set) => {
             }
         })
     }
+
     const beforeinstallpromptHandler = (e) => {
         //  console.log('PWA beforeinstallprompt fired', e)
         status.beforeInstallPrompt = e;
         set(status);
     }
-    window.addEventListener("beforeinstallprompt", beforeinstallpromptHandler);
+
+    if (typeof window !== "undefined") window.addEventListener("beforeinstallprompt", beforeinstallpromptHandler);
     // destructor
     return () => {
-        window.removeEventListener("beforeinstallprompt", beforeinstallpromptHandler);
+        if (typeof window !== "undefined") window.removeEventListener("beforeinstallprompt", beforeinstallpromptHandler);
     }
 })
 
