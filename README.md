@@ -35,6 +35,23 @@ npm run dev
 
 Please note - there is no form validation implemented. There is a truckload of options here, so I don't want to prescribe one upfront.
 
+## Screenshots
+
+<table>
+  <tr>
+    <th>Tutorial slides</th>
+    <th>Schedule</th>
+        <th>Speakers</th>
+  </tr>
+  <tr>
+    <td>
+<img alt="IonicSvelte" title="IonicSvelte" src="screenshots/localhost_3000_tabs_tab2(iPhone SE).png" width="65%" ></td>
+    <td><img alt="IonicSvelte" title="IonicSvelte" src="screenshots/localhost_3000_tabs_tab2(iPhone SE) (1).png" width="45%"></td>
+     <td><img alt="IonicSvelte" title="IonicSvelte" src="screenshots/localhost_3000_tabs_tab2(iPhone SE) (2).png" width="45%"></td>
+     
+  </tr> 
+</table>
+
 ## All starters
 * Blank demo - https://github.com/Tommertom/svelte-ionic-blank-demo
 * Tabs demo - https://github.com/Tommertom/svelte-ionic-tabs-demo
