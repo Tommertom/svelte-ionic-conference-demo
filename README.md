@@ -2,7 +2,7 @@
 <h1 align="center"> Ionic Svelte Demo - CONFERENCE</h1> <br>
 <p align="center">
   <a href="https://ionicsvelte.firebaseapp.com">
-    <img alt="IonicSvelte" title="IonicSvelte" src="https://github.com/Tommertom/svelte-ionic-app/raw/main/src/static/assets/svelte-ionic-vite.png" width="350">
+    <img alt="IonicSvelte" title="IonicSvelte" src="https://github.com/Tommertom/svelte-ionic-app/raw/main/src/static/assets/svelte-ionic-logo.png" width="350">
   </a>
 </p>
 <br>
@@ -27,11 +27,14 @@ A starter app for all Ionic UI elements - based on Ionic's Conference Starter
 
 Install this starter:
 ```bash
-git clone https://github.com/Tommertom/svelte-ionic-blank-conference.git 
+git clone https://github.com/Tommertom/svelte-ionic-conference-demo.git 
 cd svelte-ionic-blank-list
 npm i
 npm run dev
 ```
+Online playground - https://codesandbox.io/s/github/Tommertom/svelte-ionic-conference-demo
+
+When using the online playground - make sure you pop-out the render window to see the demo in full size.
 
 Please note - there is no form validation implemented. There is a truckload of options here, so I don't want to prescribe one upfront.
 
