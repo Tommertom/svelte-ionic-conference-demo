@@ -1,6 +1,7 @@
 <script lang="ts" context="module">
   import { Router, router } from "../.routify/instance.default.js";
-  import { PWAStatus, pwaStatusStream } from "$lib/pwa";
+  import { pwaStatusStream } from "$lib/pwa";
+  import type { PWAStatus } from "$lib/pwa";
 
   /* Theme variables */
   import "./theme/variables.css";
